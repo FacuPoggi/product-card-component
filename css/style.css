@@ -3,13 +3,122 @@
   padding: 0%;
   box-sizing: border-box; }
 
-@font-face {
-  font-family: 'Monserrat';
-  src: url(https://fonts.google.com/specimen/Montserrat); }
+body {
+  background-color: #F3EAE3;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500, 700; }
 
-@font-face {
-  font-family: 'Fraunces';
-  src: url(https://fonts.google.com/specimen/Fraunces); }
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%; }
+  main section {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-auto-rows: 600px;
+    border: 1px solid grey;
+    margin: auto;
+    border-radius: 20px; }
+    main section .hero {
+      border-top-right-radius: 19px;
+      border-bottom-right-radius: 19px;
+      background-color: #FFFFFF;
+      grid-column: 2;
+      grid-row: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main section .hero .hero-2 {
+        display: flex;
+        flex-direction: column;
+        margin: 10%; }
+        main section .hero .hero-2 .text-h1 {
+          margin-bottom: 30px; }
+          main section .hero .hero-2 .text-h1 h1 {
+            font-size: 15px;
+            color: #939394;
+            letter-spacing: 2px; }
+        main section .hero .hero-2 div .text-title {
+          margin-bottom: 50px; }
+          main section .hero .hero-2 div .text-title .title {
+            color: #1D2124;
+            font-size: 45px; }
+        main section .hero .hero-2 div .text-text-info {
+          margin-bottom: 50px; }
+          main section .hero .hero-2 div .text-text-info .text-info {
+            color: #939394; }
+        main section .hero .hero-2 div .text-price {
+          margin-bottom: 50px;
+          margin-right: 100px;
+          display: flex;
+          justify-content: space-evenly;
+          font-family: 'Fraunces', sans-serif; }
+          main section .hero .hero-2 div .text-price .price {
+            text-decoration: line-through;
+            margin: auto;
+            padding-left: 20px; }
+          main section .hero .hero-2 div .text-price .price-sale {
+            color: #3D8168;
+            font-size: 40px; }
+        main section .hero .hero-2 div .text-cart {
+          padding: 20px;
+          background-color: #3D8168; }
+          main section .hero .hero-2 div .text-cart .addCart {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700; }
+            main section .hero .hero-2 div .text-cart .addCart a {
+              text-decoration: none;
+              color: white; }
+              main section .hero .hero-2 div .text-cart .addCart a:hover {
+                color: black; }
+    main section .img {
+      text-align: end; }
+      main section .img .img-chanel {
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+        grid-column: 1;
+        grid-row: 1;
+        height: 100%;
+        width: 100%; }
 
-h1 {
-  color: black; }
+@media screen and (max-width: 945px) {
+  main section {
+    grid-template-rows: 600px 600px;
+    grid-template-columns: 600px; }
+    main section .hero {
+      grid-column: 1;
+      grid-row: 2;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 18px; }
+    main section .img .img-chanel {
+      grid-column: 1;
+      grid-row: 1;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 18px; } }
+
+@media screen and (max-width: 715px) {
+  main section .hero .hero-2 div .text-title .title {
+    font-size: 35px; }
+  main section .hero .hero-2 div .text-price .price-sale {
+    font-size: 35px; }
+  main section .hero .hero-2 div .text-cart .addCart {
+    font-size: 20px; }
+  main section .img .img-chanel {
+    height: 620px; } }
+
+@media screen and (max-width: 611px) {
+  main section {
+    grid-template-rows: 600px 550px;
+    grid-template-columns: 450px; }
+    main section .hero {
+      justify-content: end; }
+      main section .hero .hero-2 div .text-title .title {
+        font-size: 30px; }
+      main section .hero .hero-2 div .text-price .price-sale {
+        font-size: 30px; } }
+
+@media screen and (max-width: 473px) {
+  main section {
+    grid-template-columns: 360px; } }
