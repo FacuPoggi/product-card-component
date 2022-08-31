@@ -1,20 +1,22 @@
 @media screen and (max-width: 945px){
     main{
         section{
-            grid-template-rows: 600px 600px;
-            grid-template-columns: 600px;
-            .hero{
-                grid-column: 1;
-                grid-row: 2;
-                border-top-right-radius: 0px;
-                border-bottom-left-radius: 18px;
-            }
-            .img{
-                .img-chanel{
+            .conteiner{
+                grid-template-columns: 600px;
+                grid-template-rows: 600px 600px;
+                .hero-conteiner{
                     grid-column: 1;
-                    grid-row: 1;
-                    border-bottom-left-radius: 0px;
-                    border-top-right-radius: 18px;
+                    grid-row: 2;
+                    border-top-right-radius: 0px;
+                    border-bottom-left-radius: 18px;
+                }
+                .img{
+                    .img-fragance{
+                        grid-column: 1;
+                        grid-row: 1;
+                        border-bottom-left-radius: 0px;
+                        border-top-right-radius: 18px;
+                    }
                 }
             }
         }
@@ -24,21 +26,21 @@
 @media screen and (max-width:715px){
     main{
         section{
-            .hero{
-                .hero-2{
-                    div{
-                        .text-title{
-                            .title{
+            .conteiner{
+                .hero-conteiner{
+                    .hero{
+                        .title-product{
+                            h2{
                                 font-size: 35px;
                             }
                         }
-                        .text-price{
+                        .text-product{
                             .price-sale{
                                 font-size: 35px;
                             }
                         }
-                        .text-cart{
-                            .addCart{
+                        .add-cart{
+                            p{
                                 font-size: 20px;
                             }
                         }
@@ -46,7 +48,7 @@
                 }
             }
             .img{
-                .img-chanel{
+                .img-fragance{
                     height: 620px;
                 }
             }
@@ -57,18 +59,18 @@
 @media screen and (max-width:611px){
     main{
         section{
-            grid-template-rows: 600px 550px;
-            grid-template-columns: 450px;
-            .hero{
+            .conteiner{
                 justify-content: end;
-                .hero-2{
-                    div{
-                        .text-title{
-                            .title{
+                grid-template-rows: 600px 550px;
+                grid-template-columns: 450px;
+                .hero-conteiner{
+                    .hero{
+                        .title-product{
+                            h2{
                                 font-size: 30px;
                             }
                         }
-                        .text-price{
+                        .text-product{
                             .price-sale{
                                 font-size: 30px;
                             }
@@ -83,7 +85,9 @@
 @media screen and (max-width: 473px){
     main{
         section{
-            grid-template-columns: 360px;
+            .conteiner{
+                grid-template-columns: 360px;
+            }
         }
     }
 }
