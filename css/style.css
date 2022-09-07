@@ -43,7 +43,8 @@ main section {
         margin-bottom: 50px; }
         main section .conteiner .hero-conteiner .title-product h2 {
           color: #1D2124;
-          font-size: 45px; }
+          font-size: 45px;
+          font-family: 'Fraunces', sans-serif; }
       main section .conteiner .hero-conteiner .text-product {
         margin-bottom: 50px; }
         main section .conteiner .hero-conteiner .text-product .info {
@@ -52,15 +53,15 @@ main section {
         margin-bottom: 50px;
         margin-right: 100px;
         display: flex;
-        justify-content: space-evenly;
-        font-family: 'Fraunces' sans-serif; }
+        justify-content: space-evenly; }
         main section .conteiner .hero-conteiner .price-product .price {
           text-decoration: line-through;
           margin: auto;
           padding-left: 20px; }
         main section .conteiner .hero-conteiner .price-product .price-sale {
           color: #3D8168;
-          font-size: 40px; }
+          font-size: 40px;
+          font-family: 'Fraunces', sans-serif; }
       main section .conteiner .hero-conteiner .add-cart {
         padding: 20px;
         background-color: #3D8168; }

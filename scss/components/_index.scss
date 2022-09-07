@@ -134,6 +134,7 @@ main{
                     h2{
                         color: #1D2124;
                         font-size: 45px;
+                        font-family: 'Fraunces', sans-serif;
                     }
                 }
                 .text-product{
@@ -147,7 +148,6 @@ main{
                     margin-right: 100px;
                     display: flex;
                     justify-content: space-evenly;
-                    font-family: 'Fraunces' sans-serif;
                     .price{
                         text-decoration: line-through;
                         margin: auto;
@@ -156,6 +156,7 @@ main{
                     .price-sale{
                         color: #3D8168;
                         font-size: 40px;
+                        font-family: 'Fraunces', sans-serif;
                     }
                 }
                 .add-cart{
