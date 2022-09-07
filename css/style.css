@@ -123,4 +123,6 @@ main section {
 
 @media screen and (max-width: 473px) {
   main section .conteiner {
-    grid-template-columns: 360px; } }
+    grid-template-columns: 360px; }
+    main section .conteiner .hero-conteiner .price-product .price-sale {
+      margin-left: 35px; } }

@@ -87,6 +87,13 @@
         section{
             .conteiner{
                 grid-template-columns: 360px;
+                .hero-conteiner{
+                    .price-product{
+                        .price-sale{
+                            margin-left: 35px;
+                        }
+                    }
+                }
             }
         }
     }
